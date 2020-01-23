@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga|Lato:400,400i,700&display=swap" rel="stylesheet">
+    <script src="../index.js"></script>
+</head>
+<body>
+<form action="/" method="post">
+    <div>
+        <label for="message">Hinterlasse eine Nachricht,<br> die jemanden zum lächeln bringt.</label><br>
+        <textarea name="message" id="message"></textarea>
+    </div>
+    <button type="submit" id="submit" onclick="submit();">Absenden</button>
+</form>
+<h1>Hinterlassene Nachrichten:</h1>
+<div class="messageList">
+    <div id="list"></div>
+</div>
+<script src="../my-modules/messagesupplier.js"></script>
+</body>
+</html>
